@@ -1,3 +1,6 @@
+Le code utiliser dans la sumilation:
+
+
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 
