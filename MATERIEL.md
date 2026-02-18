@@ -32,18 +32,10 @@
 ## Câblage
 
 - **Breadboard 830 points**
-  - pour monter le circuit sans soudure
-
+  - pour monter le circuit sans soudure (sinon j'aimerais bien apprendre à faire la soudure si vous avez le matériel)
+    
 - **Câbles Dupont**
   - pour connecter tous les composants ensemble
 
 - **Câble USB A vers B**
   - pour brancher l'Arduino à l'ordi et upload le code
-
-## Optionnel
-
-- **Adaptateur 9V**
-  - pour faire marcher le système sans ordi
-
-- **Buzzer**
-  - pour faire des sons quand la barrière s'ouvre
