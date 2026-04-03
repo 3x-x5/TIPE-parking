@@ -1,11 +1,11 @@
 Le code utiliser dans la sumilation:
 
 
-#include <Wire.h>
-#include <LiquidCrystal_I2C.h>
+#include <LiquidCrystal.h>
 
-// Configuration LCD I2C
-LiquidCrystal_I2C lcd(0x27, 16, 2);
+// Configuration LCD 16 pins (parallel mode)
+// RS, E, D4, D5, D6, D7
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
 // Pins des capteurs
 #define TRIG_ENTREE 2
@@ -32,9 +32,9 @@ void setup() {
   pinMode(LED_VERTE, OUTPUT);
   pinMode(LED_ROUGE, OUTPUT);
   
-  // Initialisation LCD
-  lcd.init();
-  lcd.backlight();
+  // Initialisation LCD (16 colonnes, 2 lignes)
+  lcd.begin(16, 2);
+  lcd.clear();
   lcd.setCursor(0, 0);
   lcd.print("Parking Manager");
   delay(2000);
